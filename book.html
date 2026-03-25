@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Island Escape | Book Now</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen bg-sky-50 font-sans text-zinc-900">
+    <header class="border-b-2 border-black bg-amber-50">
+      <div class="mx-auto max-w-6xl px-5 py-5">
+        <div class="mb-3 text-2xl font-bold">Island Escape</div>
+        <nav class="flex flex-wrap gap-3" aria-label="Primary navigation">
+          <a href="index.html" class="border-2 border-black bg-amber-50 px-3 py-2 font-medium">Home</a>
+          <a href="activities.html" class="border-2 border-black bg-amber-50 px-3 py-2 font-medium">Activities</a>
+          <a href="lodging.html" class="border-2 border-black bg-amber-50 px-3 py-2 font-medium">Lodging</a>
+          <a href="transportation.html" class="border-2 border-black bg-amber-50 px-3 py-2 font-medium">Transportation</a>
+          <a href="food.html" class="border-2 border-black bg-amber-50 px-3 py-2 font-medium">Food</a>
+          <a href="book.html" aria-current="page" class="border-2 border-black bg-teal-700 px-3 py-2 font-medium text-white">Book Now</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="mx-auto max-w-6xl px-5 py-6">
+      <section class="border-2 border-black bg-white p-5">
+        <p class="mb-2 text-xs uppercase tracking-wider text-teal-700">Booking Page</p>
+        <h1 class="mb-3 text-4xl font-bold">Complete your booking</h1>
+        <div class="grid gap-3 sm:grid-cols-4">
+          <span class="border border-dashed border-black bg-sky-50 px-3 py-3 text-center font-medium">Home</span>
+          <span class="border border-dashed border-black bg-sky-50 px-3 py-3 text-center font-medium">Activity</span>
+          <span class="border border-dashed border-black bg-amber-50 px-3 py-3 text-center font-medium">Details</span>
+          <span class="border border-dashed border-black bg-amber-100 px-3 py-3 text-center font-medium">Book</span>
+        </div>
+      </section>
+
+      <section class="mt-5 grid gap-5 lg:grid-cols-[1.1fr_0.85fr]">
+        <div class="border-2 border-black bg-white p-5">
+          <h2 class="mb-4 text-2xl font-bold">Reservation Form</h2>
+          <form class="grid gap-4">
+            <div class="grid gap-4 md:grid-cols-2">
+              <label class="grid gap-2 font-medium">
+                Full name
+                <input type="text" placeholder="Alex Rivera" class="border border-black bg-white px-3 py-3" />
+              </label>
+              <label class="grid gap-2 font-medium">
+                Email
+                <input type="email" placeholder="alex@example.com" class="border border-black bg-white px-3 py-3" />
+              </label>
+            </div>
+
+            <div class="grid gap-4 md:grid-cols-2">
+              <label class="grid gap-2 font-medium">
+                Booking type
+                <select class="border border-black bg-white px-3 py-3">
+                  <option>Activity</option>
+                  <option>Lodging</option>
+                  <option>Activity + Lodging</option>
+                </select>
+              </label>
+              <label class="grid gap-2 font-medium">
+                Package
+                <select class="border border-black bg-white px-3 py-3">
+                  <option>Snorkeling Reef Tour</option>
+                  <option>Volcano Crater Drive</option>
+                  <option>Bayview Hotel Stay</option>
+                  <option>Cliffside Resort Stay</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="grid gap-4 md:grid-cols-2">
+              <label class="grid gap-2 font-medium">
+                Date
+                <input type="date" class="border border-black bg-white px-3 py-3" />
+              </label>
+              <label class="grid gap-2 font-medium">
+                Guests
+                <input type="number" min="1" value="2" class="border border-black bg-white px-3 py-3" />
+              </label>
+            </div>
+
+            <label class="grid gap-2 font-medium">
+              Notes or pickup request
+              <textarea placeholder="Example: Need airport pickup or dietary accommodation." class="min-h-[120px] border border-black bg-white px-3 py-3"></textarea>
+            </label>
+
+            <button class="border-2 border-black bg-teal-200 px-4 py-3 text-left font-semibold" type="button">Confirm Booking</button>
+          </form>
+        </div>
+
+        <aside class="grid gap-5" aria-label="Booking summary">
+          <article class="border-2 border-black bg-amber-50 p-5">
+            <h2 class="mb-3 text-2xl font-bold">Booking Summary</h2>
+            <p class="mb-3">Snorkeling Reef Tour</p>
+            <ul class="list-disc space-y-2 pl-5">
+              <li>Morning departure with equipment included</li>
+              <li>Base price: $89 per guest</li>
+              <li>Estimated total for 2 guests: $178</li>
+            </ul>
+          </article>
+
+          <article class="border-2 border-black bg-sky-50 p-5">
+            <h2 class="mb-3 text-2xl font-bold">After You Book</h2>
+            <ul class="list-disc space-y-2 pl-5">
+              <li>Email summary with package and date</li>
+              <li>Pickup or check-in instructions after review</li>
+              <li>Support can adjust activity or stay details</li>
+            </ul>
+          </article>
+        </aside>
+      </section>
+    </main>
+  </body>
+</html>

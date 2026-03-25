@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Island Escape | Lodging</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen bg-sky-50 font-sans text-zinc-900">
+    <header class="border-b-2 border-black bg-amber-50">
+      <div class="mx-auto max-w-6xl px-5 py-5">
+        <div class="mb-3 text-2xl font-bold">Island Escape</div>
+        <nav class="flex flex-wrap gap-3" aria-label="Primary navigation">
+          <a href="index.html" class="border-2 border-black bg-amber-50 px-3 py-2 font-medium">Home</a>
+          <a href="activities.html" class="border-2 border-black bg-amber-50 px-3 py-2 font-medium">Activities</a>
+          <a href="lodging.html" aria-current="page" class="border-2 border-black bg-teal-700 px-3 py-2 font-medium text-white">Lodging</a>
+          <a href="transportation.html" class="border-2 border-black bg-amber-50 px-3 py-2 font-medium">Transportation</a>
+          <a href="food.html" class="border-2 border-black bg-amber-50 px-3 py-2 font-medium">Food</a>
+          <a href="book.html" class="border-2 border-black bg-amber-50 px-3 py-2 font-medium">Book Now</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="mx-auto max-w-6xl px-5 py-6">
+      <section class="border-2 border-black bg-white p-5">
+        <p class="mb-2 text-xs uppercase tracking-wider text-teal-700">Lodging Page</p>
+        <h1 class="mb-3 text-4xl font-bold">Stay options</h1>
+        <p>Compare your options, review details, and continue to booking when you find the right stay.</p>
+      </section>
+
+      <section class="mt-5 grid gap-5 md:grid-cols-3">
+        <article class="border-2 border-black bg-white p-5">
+          <h2 class="mb-3 text-2xl font-bold">Harbor Hostel</h2>
+          <p class="mb-3">Shared rooms close to the bus station and waterfront food market.</p>
+          <ul class="mb-4 list-disc space-y-2 pl-5">
+            <li>From $42 per night</li>
+            <li>Best for solo travelers</li>
+            <li>5-minute walk to transit</li>
+          </ul>
+          <div class="flex flex-wrap gap-3">
+            <a class="border border-black bg-sky-50 px-4 py-3 font-medium" href="#hostel-details">View Details</a>
+            <a class="border-2 border-black bg-amber-200 px-4 py-3 font-semibold" href="book.html">Book Now</a>
+          </div>
+        </article>
+
+        <article class="border-2 border-black bg-white p-5">
+          <h2 class="mb-3 text-2xl font-bold">Bayview Hotel</h2>
+          <p class="mb-3">Private rooms, breakfast included, and easy pickup for popular excursions.</p>
+          <ul class="mb-4 list-disc space-y-2 pl-5">
+            <li>From $118 per night</li>
+            <li>Best for couples</li>
+            <li>Airport shuttle available</li>
+          </ul>
+          <div class="flex flex-wrap gap-3">
+            <a class="border border-black bg-sky-50 px-4 py-3 font-medium" href="#hotel-details">View Details</a>
+            <a class="border-2 border-black bg-teal-200 px-4 py-3 font-semibold" href="book.html">Book Now</a>
+          </div>
+        </article>
+
+        <article class="border-2 border-black bg-white p-5">
+          <h2 class="mb-3 text-2xl font-bold">Cliffside Resort</h2>
+          <p class="mb-3">Ocean-view rooms, spa access, and sunset dining for a more relaxed itinerary.</p>
+          <ul class="mb-4 list-disc space-y-2 pl-5">
+            <li>From $210 per night</li>
+            <li>Best for longer stays</li>
+            <li>Private transfer option</li>
+          </ul>
+          <div class="flex flex-wrap gap-3">
+            <a class="border border-black bg-sky-50 px-4 py-3 font-medium" href="#resort-details">View Details</a>
+            <a class="border-2 border-black bg-sky-200 px-4 py-3 font-semibold" href="book.html">Book Now</a>
+          </div>
+        </article>
+      </section>
+
+      <section class="mt-5 grid gap-5">
+        <article class="border-2 border-black bg-white p-5" id="hostel-details">
+          <h2 class="mb-3 text-2xl font-bold">Harbor Hostel Details</h2>
+          <ul class="list-disc space-y-2 pl-5">
+            <li>Shared kitchen, lockers, and flexible late check-in</li>
+            <li>Best paired with public transport and walking routes</li>
+          </ul>
+        </article>
+
+        <article class="border-2 border-black bg-white p-5" id="hotel-details">
+          <h2 class="mb-3 text-2xl font-bold">Bayview Hotel Details</h2>
+          <ul class="list-disc space-y-2 pl-5">
+            <li>Breakfast included and front desk booking support</li>
+            <li>Good fit for guests planning one or two excursions</li>
+          </ul>
+        </article>
+
+        <article class="border-2 border-black bg-white p-5" id="resort-details">
+          <h2 class="mb-3 text-2xl font-bold">Cliffside Resort Details</h2>
+          <ul class="list-disc space-y-2 pl-5">
+            <li>Private pool area, spa appointments, and sunset dinner terrace</li>
+            <li>Works well with volcano tours and private transfer booking</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
